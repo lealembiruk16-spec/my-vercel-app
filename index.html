@@ -71,9 +71,27 @@
       font-size: 14px;
       margin-top: 4px;
     }
-  </style>
+  </style>.company-link {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.company-link a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0b3c6d;
+  text-decoration: none;
+}
+
+.company-link a:hover {
+  text-decoration: underline;
+}
 </head>
-<body><script>
+<body><div class="company-link">
+  <a href="https://www.mapleleaffoods.com/" target="_blank">
+    Maple Leaf Food Production – Official Website
+  </a>
+</div><script>
   function toggleDetails(card) {
     card.classList.toggle("open");
   }
