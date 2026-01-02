@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accepted Applicants</title>
 
-  <style>
+  <style>.details {
+  display: none;
+  margin-top: 6px;
+}
+
+.card.open .details {
+  display: block;
+}
+
+.card {
+  cursor: pointer;
+}
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -56,7 +67,11 @@
     }
   </style>
 </head>
-<body>
+<body><script>
+  function toggleDetails(card) {
+    card.classList.toggle("open");
+  }
+</script>
 
   <header>Accepted Applicants</header>
 
@@ -83,6 +98,27 @@
       <div class="info">
         <h3>BEDRU HUSSEN HASEN</h3>
         <div class="status">ACCEPTED</div>
+      </div><div class="card">
+  <img src="https://i.pravatar.cc/150?img=1">
+  <div class="info">
+    <h3>ABAY ENYEW TADESSE</h3>
+    <p>Age: 25</p>
+    <p>Country: Ethiopia</p>
+    <p>Passport No: ET1234567</p>
+    <div class="status">ACCEPTED</div>
+  </div>
+      </div><div class="card" onclick="toggleDetails(this)">
+  <img src="https://i.pravatar.cc/150?img=1">
+  <div class="info">
+    <h3>ABAY ENYEW TADESSE</h3>
+    <div class="status">ACCEPTED</div>
+
+    <div class="details">
+      <p>Age: 25</p>
+      <p>Country: Ethiopia</p>
+      <p>Passport No: ET1234567</p>
+    </div>
+  </div>
       </div>
     </div>
 
