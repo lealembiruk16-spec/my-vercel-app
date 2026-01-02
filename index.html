@@ -92,21 +92,38 @@
   background-color: #09416a;
 }
 </style>
-
-.company-link a {
-  font-size: 18px;
-  font-weight: bold;
-  color: #0b3c6d;
-  text-decoration: none;
+</style><style>
+.links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0;
 }
 
-.company-link a:hover {
-  text-decoration: underline;
+.links-box a {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 14px;
+  background-color: #0b3c6d;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.links-box a:last-child {
+  background-color: #2e8b57;
+}
+
+.links-box a:hover {
+  opacity: 0.9;
 }
 </style>
 <body><div class="company-link">
   <a href="https://www.mapleleaffoods.com/" target="_blank">
-    Maple Leaf Food Production – Official Website
   </a>
 </div><script>
   function toggleDetails(card) {
